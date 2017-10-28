@@ -1,0 +1,16 @@
+<!--pages/new/new.wxml-->
+<view class="container"> 
+    <!--niceImg  -->
+    <view class='niceImg' >
+        <view class='nice' wx:for="{{new}}">
+            <image bindtap="imgPreview" catchtap='seeImg' data-gid="c{{index}}"
+                   data-name="https://qncdn.playonwechat.com/{{item}}" data-num="{{index}}"  
+                   src="https://qncdn.playonwechat.com/{{item}}" mode='widthFix'>
+            </image>
+        </view>
+    </view>
+    <!--share  -->
+    <view class='share'>
+        <button class="flex" open-type="share"><image src="../images/share.png" mode='widthFix'></image></button>
+    </view>
+</view>

@@ -1,0 +1,10 @@
+{
+  "extEnable": true,
+  "extAppid": "wx2262391ecbef5a1b",
+  "ext": {
+    "name": "wechat",
+    "attr": {
+      "ext_id": "1"
+    }
+  }
+}

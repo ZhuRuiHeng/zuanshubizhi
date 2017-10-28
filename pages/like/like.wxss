@@ -1,0 +1,65 @@
+/* pages/like/like.wxss */
+.container {
+  padding: 0;
+  overflow: hidden;
+}
+.niceImg{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    padding:10rpx 0 10rpx 10rpx;
+    box-sizing: border-box;
+}
+.niceImg .nice{
+  float: left;
+  width: 33.3%;
+  display: block;
+  padding:0rpx 10rpx 6rpx 0;
+  box-sizing: border-box;
+}
+.niceImg .nice image{
+  width:100%;
+}
+/*分享  */
+.share{
+    background: rgba(0,0,0,0.8); opacity: 0.8; filter:alpha(opacity=80);
+    border-radius: 50%;
+    width: 60rpx;
+    height: 60rpx;
+    padding:0;
+    overflow:hidden;
+    position:fixed;
+    right:20rpx;
+    bottom:100rpx;
+    z-index:99;
+    text-align: center;
+    vertical-align: middle;
+}
+.share image{
+   width:30rpx;
+}
+.share button{
+  position:relative;
+  display:block;
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+  font-size:24rpx;
+  text-align:center;
+  text-decoration:none;
+  line-height:2.55555556;
+  border-radius:0px;
+  -webkit-tap-highlight-color:transparent;
+  overflow:hidden;
+  color:#000000;
+  background: none;
+}
+.share button::after{
+  content: none;
+}
+.no{
+  font-size: 24rpx;
+  color:#000000;
+  text-align: center;
+  padding:30rpx;
+}

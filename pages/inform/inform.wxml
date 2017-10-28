@@ -1,0 +1,26 @@
+<!--pages/inform/inform.wxml-->
+<view class="container">
+    <view class='informImg'>
+        <image catchtap='seeImg' data-collect='{{collect}}'
+                data-name="{{img}}" data-gid='{{item.gid}}' 
+                src="{{img}}" mode='widthFix'>
+        </image> 
+    </view>
+    <view class='foot'>
+        <view class="flex" bindtap="downLoad">
+            <image src="../images/down.png" mode='widthFix'></image>
+            <view>下载</view>
+        </view>
+        <view class="flex" bindtap="loveImg" data-gid='{{gid}}'>
+            <image wx:if="{{collect}}" src="../images/lovea.png" mode='widthFix'></image>
+            <image wx:else src="../images/love.png" mode='widthFix'></image>
+            <view>收藏</view>
+        </view>
+        <view class="flex">
+            <button class="flex" open-type="share">
+                <image style="width:42rpx" src="../images/sharea.png" mode='widthFix'></image>
+                <view style='padding-top:7rpx;'>分享</view>
+            </button>
+        </view>
+    </view>
+</view>

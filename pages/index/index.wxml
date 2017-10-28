@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+   <!--轮播图 -->
+    <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="#ff4444" indicator-active-color="#fff">
+      <!-- wx:for="{{imgUrls}}"  -->
+      <block>
+        <swiper-item>
+            <image  bindtap="imgPreviewa"  src="https://qncdn.playonwechat.com/nice/lunbo.png" 
+                    data-name="https://qncdn.playonwechat.com/nice/lunbo.png" class="slide-image" data-gid="a"
+                    mode="widthFix" id="" >
+            </image>
+        </swiper-item>
+      </block>
+    </swiper> 
+    <!--niceImg  -->
+    <view class='niceImg'>
+        <view class='nice' wx:for="{{niceImg}}">
+            <image bindtap="imgPreview" catchtap='seeImg' data-gid="a{{index}}"
+                   data-name="https://qncdn.playonwechat.com/{{item}}" data-num="{{index}}"  
+                   src="https://qncdn.playonwechat.com/{{item}}"  mode='aspectFill'>   
+            </image>
+        </view>
+    </view>
+    <!--share  -->
+    <view class='share'>
+        <button class="flex" open-type="share"><image src="../images/share.png" mode='widthFix'></image></button>
+    </view>
+</view>

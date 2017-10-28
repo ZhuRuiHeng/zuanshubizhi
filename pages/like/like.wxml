@@ -1,0 +1,19 @@
+<!--pages/like/like.wxml-->
+<view class="container">
+    <!--niceImg  -->
+    <view class='niceImg' wx:if="{{niceImg.length>0}}">
+        <view class='nice' wx:for="{{niceImg}}">
+            <image bindtap="imgPreview" catchtap='seeImg' data-gid="{{item.gid}}"
+                   data-name="{{item.img}}" data-num="{{index}}"  
+                   src="{{item.img}}" mode='widthFix'>
+            </image>
+        </view>
+    </view>
+    <view wx:else  class='no'>
+        您还未收藏壁纸
+    </view>
+    <!--share  -->
+    <!-- <view class='share'>
+        <button class="flex" open-type="share"><image src="../images/share.png" mode='widthFix'></image></button>
+    </view> -->
+</view>
