@@ -62,7 +62,7 @@ Page({
           success: function (res) {
             console.log(res.data);
             that.setData({
-              imgUrls: res.data.imgUrls,
+             // imgUrls: res.data.imgUrls,
               niceImgs: res.data.niceImg,
               niceImg: res.data.niceImg.slice(0, 12)
             })
@@ -99,9 +99,9 @@ Page({
   //轮播图预览
   imgPreviewa: function (e) { //图片预览
     var current = this.data.imgUrls;
-    var index = e.currentTarget.dataset.num;
+    //var index = e.currentTarget.dataset.num;
     wx.previewImage({
-      current: current[index], // 当前显示图片的http链接
+      current: current[0], // 当前显示图片的http链接
       urls: current,// 需要预览的图片http链接列表
       fail: function () {
         //console.log('fail')

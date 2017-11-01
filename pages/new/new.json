@@ -1,5 +1,5 @@
 {
   "navigationBarTitleText": "最新",
-  "enablePullDownRefresh": true,
+  "enablePullDownRefresh": false,
   "backgroundTextStyle": "dark"
 }

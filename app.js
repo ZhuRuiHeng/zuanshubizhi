@@ -20,7 +20,7 @@ App({
     //var kid = 188;//extConfig.kid;
     wx.setStorageSync('kid', that.data.kid);
     
-   // 展示本地存储能力
+    // 展示本地存储能力
     // var logs = wx.getStorageSync('logs') || []
     // logs.unshift(Date.now())
     // wx.setStorageSync('logs', logs)
@@ -40,12 +40,12 @@ App({
             success: function (res) {
               console.log(res);
               console.log(res.data.data.sign);
-              that.data.sign = res.data.data.sign;
-              that.data.mid = res.data.data.mid;
+              // that.data.sign = res.data.data.sign;
+              // that.data.mid = res.data.data.mid;
               try {
                 wx.setStorageSync('mid', res.data.data.mid);
                 wx.setStorageSync('sign', res.data.data.sign);
-                that.data.mid = res.data.data.mid;
+                //that.data.mid = res.data.data.mid;
                 wx.getUserInfo({
                   success: function (res) {
                     // 保存用户信息

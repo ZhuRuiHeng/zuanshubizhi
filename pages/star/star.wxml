@@ -2,6 +2,6 @@
  <!--启动  -->
  <view class="container">
     <view class='haibao'>
-        <image src="https://qncdn.playonwechat.com/nice/new.png" mode='widthFix'></image>
+        <image src="https://qncdn.playonwechat.com/nice/h3.png" mode='widthFix'></image>
     </view>
 </view>

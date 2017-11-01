@@ -20,13 +20,4 @@ Page({
   },
 
 
-  onReady: function () {
-    
-  },
-
-  
-  onShow: function () {
-   
-  },
-
 })
