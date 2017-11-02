@@ -1,4 +1,4 @@
-both// pages/like/like.js
+// pages/like/like.js
 Page({
 
   /**

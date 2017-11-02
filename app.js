@@ -35,7 +35,7 @@ App({
         //发起网络请求
        if (res.code){
           wx.request({
-            url: 'http://what-test.playonwechat.com/api/auth-by-three?code=' + res.code + '&operator_id='+that.data.kid,
+            url: 'https://what-test.playonwechat.com/api/auth-by-three?code=' + res.code + '&operator_id='+that.data.kid,
             method: 'GET',
             success: function (res) {
               console.log(res);
@@ -50,7 +50,7 @@ App({
                   success: function (res) {
                     // 保存用户信息
                     wx.request({
-                      url: 'http://what-test.playonwechat.com/api/save-user-info?sign='+that.data.sign+'&operator_id='+ that.data.kid,
+                      url: 'https://what-test.playonwechat.com/api/save-user-info?sign='+that.data.sign+'&operator_id='+ that.data.kid,
                       method: 'POST',
                       success: function (res) {
                         console.log(res);
